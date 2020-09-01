@@ -1,0 +1,16 @@
+Protocols:
+  MyDatabase:
+    SpeakerDiarization:
+      MyProtocol:
+        train:
+           uri: train.lst
+           key1: train.ext1
+           key2: train.ext2
+
+
+  X:
+    SpeakerDiarization:
+      MyProtocol:
+        development:
+          MyDatabase.SpeakerDiarization.MyProtocol: [train]
+          
